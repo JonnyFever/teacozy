@@ -1,0 +1,192 @@
+/* Google Fonts */
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://fonts.gstatic.com/s/amaticsc/v11/TUZyzwprpvBS1izr_vOECuSf.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(https://fonts.gstatic.com/s/amaticsc/v11/TUZ3zwprpvBS1izr_vOMscGKfrUC.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Mali';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mali Regular'), local('Mali-Regular'), url(https://fonts.gstatic.com/s/mali/v1/N0ba2SRONuN4SC3EDw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Satisfy';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Satisfy Regular'), local('Satisfy-Regular'), url(https://fonts.gstatic.com/s/satisfy/v8/rP2Hp2yn6lkG50LoCZOIHQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  margin: 0;
+  color: seashell;
+  background-color: rgb(255, 204, 183);
+  opacity: 0.9;
+}
+
+a {
+  color: seashell;
+}
+
+div {
+  display: block;
+}
+
+h2, h3, h4 {
+  margin: 0;
+  padding: 10px;
+}
+
+h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 36px;
+}
+
+h3, h4 {
+  font-family: "Amatic SC", cursive;
+  font-size: 36px;
+}
+
+h5 {
+  font-family: "Amatic SC", cursive;
+  font-size: 26px;
+}
+
+span, p {
+  font-family: "Mali";
+}
+
+/* Universal Styles - News Stories */
+
+/* Header */
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: black;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  align-items: center;
+}
+
+header img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+nav {
+  text-align: right;
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+  font-family: "Amatic SC", cursive;
+  font-size: 26px;
+}
+
+/* Content */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main {
+  opacity: 0.9;
+  width: 1200px;
+  margin: auto;
+  padding-top: 69px;
+}
+
+#mission {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+  padding-top: 70px;
+  flex-direction: column;
+}
+
+#mission .content{
+  background-color: black;
+  width: 100%;
+  margin: auto;
+}
+
+#tea {
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  padding-top: 70px;
+  color: rgb(15, 12, 11);
+}
+
+.tea-item img {
+  height: 200px;
+  display: block;
+  margin: 10px;
+}
+
+.tea-item span {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.tea-item {
+  padding: 5px;
+}
+
+#locations {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  height: 500px;
+  padding-top: 70px;
+}
+
+#locations .flex-container {
+  margin: auto;
+}
+
+.location {
+  width: 300px;
+  background-color: black;
+  padding: 10px;
+  margin: 5px 20px;
+  opacity: 1;
+  flex-basis: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact {
+  height: 200px;
+  color: rgb(15, 12, 11);
+}
+
+/* Footer */
+
+footer {
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(15, 12, 11);
+}
